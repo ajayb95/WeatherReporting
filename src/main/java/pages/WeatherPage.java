@@ -6,33 +6,37 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import base.SeleniumBase;
 
-public class WeatherPage extends SeleniumBase{
+public class WeatherPage extends SeleniumBase {
 	String city;
-	
+
 	public WeatherPage searchCity(String city) {
-		this.city=city;
+		this.city = city;
 		wt.until(ExpectedConditions.invisibilityOfElementLocated(By.id("loading")));
-		dr.findElementById("searchBox").sendKeys(city);
+		WebElement search = findElement("id", "searchBox");
+		sendKeys(search, city);
 		return this;
 	}
-	
+
 	public WeatherPage selectCity() {
-		wt.until(ExpectedConditions.visibilityOfElementLocated(By.id(city))).click();
+		WebElement searchCity = wt.until(ExpectedConditions.visibilityOf(findElement("id", city)));
+		click(searchCity);
 		return this;
 	}
-	
+
 	public WeatherPage expandCityDetail() {
 		WebElement cty = wt.until(ExpectedConditions
-				.visibilityOf(dr.findElement(By.xpath("//div[@class='cityText' and text()='"+city+"']"))));
-		cty.click();
+				.visibilityOf(findElement("xpath", "//div[@class='cityText' and text()='" + city + "']")));
+		click(cty);
 		return this;
 	}
-	
+
 	public WeatherPage getTemp() {
-		uiCel = Integer.parseInt(dr.findElementByXPath("//b[starts-with(text(),'Temp in Degrees')]").getText().replaceAll("\\D+", ""));
-		uiFar = Integer.parseInt(dr.findElementByXPath("//b[starts-with(text(),'Temp in Fahrenheit')]").getText().replaceAll("\\D+", ""));
-		System.out.println(uiCel);
-		System.out.println(uiFar);
+		WebElement deg = findElement("xpath", "//b[starts-with(text(),'Temp in Degrees')]");
+		uiCel = Integer.parseInt(getText(deg).replaceAll("\\D+", ""));
+		
+		WebElement far = findElement("xpath", "//b[starts-with(text(),'Temp in Fahrenheit')]");
+		uiFar = Integer.parseInt(getText(far).replaceAll("\\D+", ""));
+		
 		return this;
 	}
 }

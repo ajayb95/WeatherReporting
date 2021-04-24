@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14851" started-at="2021-04-24T12:11:58 IST" finished-at="2021-04-24T12:12:13 IST">
+  <suite name="Suite" duration-ms="19662" started-at="2021-04-24T17:33:34 IST" finished-at="2021-04-24T17:33:53 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14851" started-at="2021-04-24T12:11:58 IST" finished-at="2021-04-24T12:12:13 IST">
+    <test name="Test" duration-ms="19662" started-at="2021-04-24T17:33:34 IST" finished-at="2021-04-24T17:33:53 IST">
       <class name="testcase.UICases">
-        <test-method status="PASS" signature="before()[pri:0, instance:testcase.UICases@ea1a8d5]" name="before" is-config="true" duration-ms="7388" started-at="2021-04-24T12:11:58 IST" finished-at="2021-04-24T12:12:06 IST">
+        <test-method status="PASS" signature="before()[pri:0, instance:testcase.UICases@38bc8ab5]" name="before" is-config="true" duration-ms="15987" started-at="2021-04-24T17:33:34 IST" finished-at="2021-04-24T17:33:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="TC001()[pri:0, instance:testcase.UICases@ea1a8d5]" name="TC001" duration-ms="7115" started-at="2021-04-24T12:12:06 IST" finished-at="2021-04-24T12:12:13 IST">
+        <test-method status="PASS" signature="before()[pri:0, instance:testcase.UICases@38bc8ab5]" name="before" is-config="true" duration-ms="14056" started-at="2021-04-24T17:33:34 IST" finished-at="2021-04-24T17:33:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testcase.UICases@38bc8ab5]" name="before" is-config="true" duration-ms="16315" started-at="2021-04-24T17:33:34 IST" finished-at="2021-04-24T17:33:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="TC001(java.lang.String)[pri:0, instance:testcase.UICases@38bc8ab5]" name="TC001" duration-ms="5245" started-at="2021-04-24T17:33:48 IST" data-provider="data" finished-at="2021-04-24T17:33:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mangalore]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:testcase.UICases@ea1a8d5]" name="after" is-config="true" duration-ms="296" started-at="2021-04-24T12:12:13 IST" finished-at="2021-04-24T12:12:13 IST">
+        <test-method status="PASS" signature="TC001(java.lang.String)[pri:0, instance:testcase.UICases@38bc8ab5]" name="TC001" duration-ms="3633" started-at="2021-04-24T17:33:50 IST" data-provider="data" finished-at="2021-04-24T17:33:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method status="PASS" signature="TC001(java.lang.String)[pri:0, instance:testcase.UICases@38bc8ab5]" name="TC001" duration-ms="3210" started-at="2021-04-24T17:33:50 IST" data-provider="data" finished-at="2021-04-24T17:33:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kanpur]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testcase.UICases@38bc8ab5]" name="after" is-config="true" duration-ms="1" started-at="2021-04-24T17:33:53 IST" finished-at="2021-04-24T17:33:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testcase.UICases@38bc8ab5]" name="after" is-config="true" duration-ms="0" started-at="2021-04-24T17:33:53 IST" finished-at="2021-04-24T17:33:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="after()[pri:0, instance:testcase.UICases@38bc8ab5]" name="after" is-config="true" duration-ms="1" started-at="2021-04-24T17:33:53 IST" finished-at="2021-04-24T17:33:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- testcase.UICases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
